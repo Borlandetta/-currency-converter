@@ -1,291 +1,129 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.header {
-    display: block;
-    margin-top: 0;
-    padding-left: 5px;
-    padding-right: 5px;
-    background-color:rgb(234, 239, 243);
-    border-bottom: 5px dotted rgb(168, 195, 207) ;
-}
-
-.aga {
-    color: #9199B3;
-    margin-top: 15px;
-}
-
-.do {
-    margin-top: 0;
-    padding-top: 10px;
-    margin-bottom: 5px;
-}
-
-img {
-    height: 90px;
-}
-
-marquee {
-    font-size: 90px;
-}
-
-main {
-    padding: 0px 270px;
-    background-color: #F8F9FA;
-}
-
-.container {
-    display: block;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 5px;
-    padding-right: 5px;
-    background-color:#F8F9FA;
-}
-.item-one {
-    padding-top: 50px;
-    display: flex;   
-    justify-content: space-between;
-    border-bottom: 2px solid;
-    border-color: #E9EBF0;
-}
-
-.bom {
-    font-weight: 700;
-}
-
-p {
-    margin: 20px;
-    font-weight: 600;
-}
-
-.kolobok {
-    color: #B9BECF;
-}
-
-.item-two {
-    display: flex;
-    border-bottom: 2px solid;
-    border-color: #E9EBF0;
-}
-.item-two p {
-    font-weight: 500;
-}
-
-.ebat {
-    justify-content: space-between;
-    display: flex;
-}
-
-.item-three {
-    background-color:#F8F9FA;
-}
-
-.btn {
-    height: 100%;
-    padding: 12px 20px;
-    background-color: #315EFB;
-    color:white;
-    text-transform: uppercase;
-    border: none;
-    cursor: pointer;
-}
- .btn:hover {
-     color:#315EFB;
-     background-color: white;
-     box-shadow: inset 0 0 0 3px #315EFB;
- }
-
- .col {
-    height: 40px;
-    position: relative;
-	width: 100px;
-	background: #FFFFFF;
-	border: 1px solid;
-    border-radius: 4px;
-    border-color: #E9EBF0;
-    border-radius: 0px;
- }
-
-
-.col select{
-    width: 90px;
-    height: 100%;
-	background: none;
-}
-
-option,
-select {
-    padding-left: 15px;
-    padding-top: 5px;
-    border: none;
-    height: 100%;
-}
-
-
-.col:focus,
-.col:hover {
-	border: 1px solid #315EFB;
-	color: #315EFB;
-}
-
-/*убирает стрелочки в инпуте*/
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-    /* display: none; <- Crashes Chrome on hover */
-    -webkit-appearance: none;
-    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
-}
-
-
-.inp input {
-    height: 40px;
-    width: 250px;
-    border: 1px solid;
-    border-radius: 4px;
-    border-color: #E9EBF0;
-    border-radius: 0px;
-}
-
-.inp input:focus,
-.inp input:hover {
-	border: 1px solid #315EFB;
-	color: #315EFB;
-}
-.row {
-    border: none;
-    padding-left: 20px;
-}
-
-.item-four {
-    border-top: 5px dotted rgb(197, 220, 230);
-}
-
-.wrapper-table {
-    margin-top: 20px;
-    width: 10%;
-    margin-left: 40%;
-}
-
-table {
-    margin-left: 20px;
-    background-color: white;
-    border-collapse: collapse;
-    border-style: hidden;
-    color: #9199B3;
-}
-
-table td{
-    border-left: 0;
-    border-right: 0;
-    border-top:1px solid #E9EBF0;
-    border-bottom:1px solid #E9EBF0;
-    font-weight: 500;
-    padding: 20px 20px; 
-}
-
-table th {
-    border-left: 0;
-    border-right: 0;
-    border-top:1px solid #E9EBF0;
-    border-bottom:1px solid #E9EBF0;
-    padding: 20px 20px;
-}
-
-table tr:nth-child(2n+3) {
-    background-color: #F9FAFB;
-}
-
-table td:nth-child(2n) {
-    color: black;
-}
-
-.mda {
-    margin-top: 20px;
-    background-color:rgb(234, 239, 243);
-    
-}
-
-footer {
-    margin: 0;
-    border-top: 5px dotted rgb(168, 195, 207);
-}
-
-footer p {
-    margin: 0;
-    padding-top: 0;
-    padding: 10px;
-    text-align: center;
-    
-}
-
-
-
-@media screen and (max-width: 800px) { 
-
-    marquee {
-        font-size: 30px;
-    }
-
-    main {
-        padding: 0;
-    }
-
-    .item-two {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .item-two p {
-        margin: 10px 20px;
-    }
-
-
-    .ebat {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: stretch;
-        margin-bottom: 10px;
-    }
-
-    .break {
-        width: 100%;
-    }
-
-    .col {
-        margin: 0;
-        width: 95px;
-    }
-
-    .btn {
-        margin-left: 20px;
-    }
-
-    .wrapper-table {
-        width: 30%;
-        margin-left: 20%;
-        margin-top: 10px;
-        }
-
-        .inp input {
-            width: 100px;
-            height: 40px;
-            border: 1px solid;
-            border-radius: 4px;
-            border-color: #E9EBF0;
-            border-radius: 0px;
-        }
-
-        .dd {
-            display: none;
-        }
-
-        .btn {
-            margin-top: 10px;
-        }
-       
-
- }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <!--<p class="naz">hasta la vista</p> -->
+        <marquee  behavior="alternate" direction="right"><img src="https://i.ibb.co/SJ84wLP/mops.gif" alt="mops"hasta la vista>hasta la vista</marquee>
+    </header>
+    <main>
+        <div class="container">
+            <!--item-one-->
+            <div class="item-one">
+                <p>Конвертер валют</p>
+                <p class="kolobok">600 долларов США в евро</p>
+            </div>
+            <!--item-two-->
+            <div class="item-two">
+                <!--инпут результата-->
+                <p><span class="bom">666</span>  EUR <span class="bom">= 811.388</span> USD &nbsp;&nbsp;&nbsp; </p><p><span class="bom">1</span> EUR = <span class="bom">1.2183</span> USD &nbsp;&nbsp;&nbsp;
+                  <span class="bom"></p><p>1</span> USD = <span class="bom">0.8208</span> EUR</p>
+            </div>
+            <!--item-three-->
+            <div class="item-three">
+              <p class="do">Пересчитать</p>
+                <!--инпут ввода-->
+                <div class="ebat">
+            <div class="row">
+                <div class="inp">
+                    <input id="input" type="number" class="form-control" id="name" autofocus/>
+                </div>
+            </div>
+            <div class="col">
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option value="USD" selected>USD</option>
+                    </select>
+                </div>
+                <p class="aga">=</p>
+                <div class="col">
+                    <select id="select" class="form-control" id="exampleFormControlSelect1">
+                        <option value="RUB">RUB</option>
+                        <option value="EUR">EUR</option>
+                        <option value="GPB">GPB</option>
+                    </select>
+                </div>
+                <div class="break"></div>
+                <button class="btn">Конвертировать ></button>
+              </div>
+            </div>
+            <div class="item-four">
+            <div class="wrapper-table">
+            <table border="1" width="100%" cellpadding="5">
+                <tr>
+                 <th>Код</th>
+                 <th>Курс</th>
+                </tr>
+                <tr>
+                 <td>AMD</td>
+                 <td>138.0370</td>
+               </tr>
+               <tr>
+                <td>AUD</td>
+                <td>55.6234</td>
+              </tr>
+              <tr>
+                <td>AZN</td>
+                <td>42.1893</td>
+              </tr>
+              <tr>
+                <td>BGN</td>
+                <td>44.6019</td>
+              </tr>
+              <tr>
+                <td>BRL</td>
+                <td>14.1777</td>
+              </tr>
+              <tr>
+                <td>BYN</td>
+                <td>28.8949</td>
+              </tr>
+              <tr>
+                <td>CAD</td>
+                <td>59.2590</td>
+              </tr>
+              <tr>
+                <td>CHF</td>
+                <td>80.0265</td>
+              </tr>
+              <tr>
+                <td>CNY</td>
+                <td>112.1590</td>
+              </tr>
+              <tr>
+                <td>CZK</td>
+                <td>34.4879</td>
+              </tr>
+              <tr>
+                <td>DKK</td>
+                <td>117.3150</td>
+              </tr>
+              <tr>
+                <td>EUR</td>
+                <td>87.3274</td>
+              </tr>
+              <tr>
+                <td>GBP</td>
+                <td>101.4554</td>
+              </tr>
+              </table>
+</div>
+</div>
+        </div>
+    </div>
+    </main>
+    <footer class="mda">
+        <p class="bd">© Евгений Понасенков, 2021</p>
+        <p class="dd">Все права на материалы сайта принадлежат Евгению Понасенкову. Использование, перепубликация 
+            и цитирование материалов сайта возможно 
+            только с письменного разрешения официального представителя Евгения Понасенкова, 
+            при условии согласия с пользовательским соглашением.</p>
+    </footer>
+    <script src="/main.js"></script>
+</body>
+</html>
