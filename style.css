@@ -1,3 +1,11 @@
+@font-face {
+	font-family: 'Helvetica';
+	src: url('fonts/aghelvetica.eot');
+	src: local('☺'), url('fonts/aghelvetica.woff') format('woff'), url('fonts/aghelvetica.ttf') format('truetype'), url('fonts/aghelvetica.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
