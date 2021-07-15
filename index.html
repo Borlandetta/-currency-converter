@@ -9,8 +9,10 @@
 </head>
 <body>
     <header class="header">
-        <!--<p class="naz">hasta la vista</p> -->
-        <marquee  behavior="alternate" direction="right"><img src="https://i.ibb.co/SJ84wLP/mops.gif" alt="mops">hasta la vista</marquee>
+      <div class="logo">
+        <img src="https://i.ibb.co/SJ84wLP/mops.gif" alt="mops">
+        <p class="text-logo">hasta la vista</p>
+      </div>
     </header>
     <main>
         <div class="container">
@@ -35,25 +37,26 @@
                     <input id="input" type="number" class="form-control" id="name" autofocus/>
                 </div>
             </div>
-            <div class="col">
+            <!-- <div class="break"></div> -->
+            <div class="col one">
                     <select class="form-control" id="exampleFormControlSelect1">
                         <option value="USD" selected>USD</option>
                     </select>
                 </div>
                 <p class="aga">=</p>
-                <div class="col">
+                <div class="col two">
                     <select id="select" class="form-control" id="exampleFormControlSelect1">
                         <option value="RUB">RUB</option>
                         <option value="EUR">EUR</option>
                         <option value="GPB">GPB</option>
                     </select>
                 </div>
-                <div class="break"></div>
+                <!-- <div class="break"></div> -->
                 <button class="btn">Конвертировать ></button>
               </div>
             </div>
             <div class="item-four">
-            <div class="wrapper-table">
+              <div class="wrapper-table">
             <table border="1" width="100%" cellpadding="5">
                 <tr>
                  <th>Код</th>
