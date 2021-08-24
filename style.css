@@ -6,7 +6,6 @@
 	font-style: normal;
 }
 
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -19,7 +18,7 @@
     padding-left: 5px;
     padding-right: 5px;
     background-color:rgb(234, 239, 243);
-    border-bottom: 5px dotted rgb(168, 195, 207) ;
+    border-bottom: 5px dotted rgb(168, 195, 207);
 }
 
 .logo {
@@ -52,19 +51,21 @@ main {
 
 .converter {
     background-color: blueviolet;
+    border: 5px solid rgb(30, 32, 32)
 }
 
 .converter-item {
-    border-bottom: 2px solid;
     border-color: #E9EBF0;
 }
 
 .item-one {
+    border-bottom: 2px solid;
     display: flex;  
     justify-content: space-between;
 }
 
 .item-two {
+    border-bottom: 2px solid;
     display: flex;  
     justify-content: center;
 }
@@ -180,10 +181,11 @@ input::-webkit-inner-spin-button {
 
 .table-item { 
     margin-top: 20px;
-    width: 200px;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 20px;
+    border: 5px solid rgb(219, 226, 245);
 }
 
 .table {
@@ -197,7 +199,8 @@ table {
     color: #9199B3;
 }
 
-table td{
+table td {
+    text-align: center;
     border-left: 0;
     border-right: 0;
     border-top:1px solid #E9EBF0;
