@@ -27,20 +27,9 @@
     justify-content: center;
 }
 
-.text-logo {
+.logo__item {
     margin: 0;
     font-size: 90px;
-}
-
-.aga {
-    color: #9199B3;
-    margin-top: 15px;
-}
-
-.do {
-    margin-top: 0;
-    padding-top: 10px;
-    margin-bottom: 5px;
 }
 
 img {
@@ -60,14 +49,31 @@ main {
     margin-right: auto;
     background-color:#F8F9FA;
 }
-.item-one {
-    display: flex;   
-    justify-content: space-between;
+
+.converter {
+    background-color: blueviolet;
+}
+
+.converter-item {
     border-bottom: 2px solid;
     border-color: #E9EBF0;
 }
 
-.bom {
+.item-one {
+    display: flex;  
+    justify-content: space-between;
+}
+
+.item-two {
+    display: flex;  
+    justify-content: center;
+}
+
+.item-one-text {
+    color: #B9BECF;
+}
+
+.item-two-text {
     font-weight: 700;
 }
 
@@ -76,35 +82,32 @@ p {
     font-weight: 600;
 }
 
-.kolobok {
-    color: #B9BECF;
-}
-
-.item-two {
-    display: flex;
-    justify-content: center;
-    border-bottom: 2px solid;
-    border-color: #E9EBF0;
-}
 .item-two p {
     font-weight: 500;
 }
 
-.ebat {
+.count {
     justify-content: space-between;
     display: flex;
     padding-left: 20px;
     padding-right: 20px;
 }
 
-.item-three {
-    background-color:#F8F9FA;
+.item-three-text_two {
+    color: #9199B3;
+    margin-top: 15px;
+}
+
+.item-three-text_one {
+    width: 100%;
+    margin-top: 0;
+    padding-top: 10px;
+    margin-bottom: 5px;
 }
 
 .btn {
     height: 100%;
     padding: 12px 20px;
-
     background-color: #315EFB;
     color:white;
     text-transform: uppercase;
@@ -117,7 +120,7 @@ p {
      box-shadow: inset 0 0 0 3px #315EFB;
  }
 
- .col {
+ .currency {
     height: 40px;
     position: relative;
 	width: 100px;
@@ -129,10 +132,10 @@ p {
  }
 
 
-.col select{
-    width: 90px;
+.currency select{
+    width: 100px;
     height: 100%;
-	background: none;
+	
 }
 
 option,
@@ -140,12 +143,10 @@ select {
     padding-left: 15px;
     padding-top: 5px;
     border: none;
-    height: 100%;
 }
 
-
-.col:focus,
-.col:hover {
+.currency:focus,
+.currency:hover {
 	border: 1px solid #315EFB;
 	color: #315EFB;
 }
@@ -157,7 +158,6 @@ input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
 }
-
 
 .inp input {
     height: 40px;
@@ -173,20 +173,21 @@ input::-webkit-inner-spin-button {
 	border: 1px solid #315EFB;
 	color: #315EFB;
 }
+
 .row {
     border: none;
 }
 
-.item-four {
-    border-top: 5px dotted rgb(197, 220, 230);
-}
-
-.wrapper-table {
+.table-item { 
     margin-top: 20px;
     width: 200px;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 20px;
+}
+
+.table {
+    border-top: 5px dotted rgb(197, 220, 230);
 }
 
 table {
@@ -221,15 +222,11 @@ table td:nth-child(2n) {
     color: black;
 }
 
-.mda {
-    padding-top: 20px;
-    background-color:rgb(234, 239, 243);
-    
-}
-
 footer {
     margin: 0;
-    border-top: 5px dotted rgb(168, 195, 207);
+    border-top: 5px dotted rgb(168, 195, 207); 
+    padding-top: 20px;
+    background-color:rgb(234, 239, 243);
 }
 
 footer p {
@@ -248,7 +245,7 @@ footer p {
         max-width: 100%;
     }
 
-    .text-logo {
+    .logo__item {
         font-size: 40px;
     }
 
@@ -256,6 +253,10 @@ footer p {
         padding: 0;
     }
 
+    .container {
+        margin: 0;
+    }    
+    
     .item-one {
         justify-content: center ;
     }
@@ -312,19 +313,18 @@ footer p {
         margin-right: auto;
     }
 
-    .bd {
+    .media-text-one {
         text-align: center;
     }
-
-    .item-four {
-        margin-left: auto;
-        margin-right: auto;
-    }
+    
+    .media-text-one {
+            display: none;
+        }
 
     .wrapper-table {
         width: 50%;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 30px;
+        margin-right: 0;
         margin-top: 10px;
         }
 
@@ -337,16 +337,14 @@ footer p {
             border-radius: 0px;
         }
 
-        .dd {
-            display: none;
-        }
+        
 
         .btn {
             margin-top: 10px;
             width: 200px;
         }
 
-        .kolobok {
+        .item-one-text {
             display: none;
         }
  }
