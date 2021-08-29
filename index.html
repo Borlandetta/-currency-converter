@@ -15,121 +15,118 @@
       </div>
     </header>
     <main>
-        <div class="container">
-          <div class="converter">
-            <!--item-one-->
-            <div class="converter-item item-one">
-                <p>Конвертер валют</p>
-                <p class="item-one-text">600 долларов США в евро</p>
-            </div>
-            <!--item-two-->
-            <div class="converter-item item-two">
-                <p><span class="item-two-text">666</span>  EUR <span class="item-two-text">= 811.388</span> USD &nbsp;&nbsp;&nbsp; 
-                </p><p><span class="item-two-text">1</span>
-                   EUR = <span class="item-two-text">1.2183</span> USD &nbsp;&nbsp;&nbsp;
-                  <span class="item-two-text"></p><p>1</span> USD = <span class="item-two-text">0.8208</span> EUR</p>
-            </div>
-            <!--item-three-->
-            <div class="converter-item item-three">
-              <p class="item-three-text_one">Пересчитать</p>
-                <!--инпут ввода-->
-                <div class="count">
-            <div class="row">
-                <div class="inp">
-                    <input id="input" type="number" class="form-control" id="name" autofocus/>
+      <div class="container">
+        <div class="converter">
+          <div class="converter__item converter__item_denomination">
+            <p>Конвертер валют</p>
+            <p class="converter__item_denomination_text">600 долларов США в евро</p>
+          </div>
+          <div class="converter__item converter__item_conversion_value">
+            <p><span class="converter__item_conversion_value_text">666</span>  EUR <span class="converter__item_conversion_value_text">= 811.388</span> USD </p>
+            <p><span class="converter__item_conversion_value_text">1</span>EUR = <span class="converter__item_conversion_value_text">1.2183</span> USD </p>
+            <p>1</span> USD = <span class="converter__item_conversion_value_text">0.8208</span> EUR</p>
+          </div>
+          <div class="converter__item converter__item_currency">
+            <p class="converter__item_currency_text">Пересчитать</p>
+            <div class="counter">
+              <div class="counter__input">
+                <div class="counter__input_value">
+                  <input id="input" type="number" id="name" autofocus/>
                 </div>
-            </div>
-            <div class="currency one">
-                    <select class="form-control" id="exampleFormControlSelect1">
-                        <option value="USD" selected>USD</option>
-                    </select>
-                </div>
-                <p class="item-three-text_two">=</p>
-                <div class="currency two">
-                    <select id="select" class="form-control" id="exampleFormControlSelect1">
-                        <option value="RUB">RUB</option>
-                        <option value="EUR">EUR</option>
-                        <option value="GPB">GPB</option>
-                    </select>
-                </div>
-                <button class="btn">Конвертировать ></button>
-                </div>
+              </div>
+              <div class="counter__item counter__item_currency_one">
+                <select>
+                  <option value="USD" selected>USD</option>
+                </select>
+              </div>
+              <p class="converter__item_currency_text_equal">=</p>
+              <div class="counter__item counter__item_currency_two">
+                <select>
+                  <option value="RUB">RUB</option>
+                  <option value="EUR">EUR</option>
+                  <option value="GPB">GPB</option>
+                </select>
+              </div>
+              <button class="counter__button">Конвертировать ></button>
             </div>
           </div>
         </div>
-
-
-            <div class="table">
-              <div class="table-item">
-            <table border="1" width="100%" cellpadding="5">
-                <tr>
-                 <th>Код</th>
-                 <th>Курс</th>
-                </tr>
-                <tr>
-                 <td>AMD</td>
-                 <td>138.0370</td>
-               </tr>
-               <tr>
-                <td>AUD</td>
-                <td>55.6234</td>
-              </tr>
-              <tr>
-                <td>AZN</td>
-                <td>42.1893</td>
-              </tr>
-              <tr>
-                <td>BGN</td>
-                <td>44.6019</td>
-              </tr>
-              <tr>
-                <td>BRL</td>
-                <td>14.1777</td>
-              </tr>
-              <tr>
-                <td>BYN</td>
-                <td>28.8949</td>
-              </tr>
-              <tr>
-                <td>CAD</td>
-                <td>59.2590</td>
-              </tr>
-              <tr>
-                <td>CHF</td>
-                <td>80.0265</td>
-              </tr>
-              <tr>
-                <td>CNY</td>
-                <td>112.1590</td>
-              </tr>
-              <tr>
-                <td>CZK</td>
-                <td>34.4879</td>
-              </tr>
-              <tr>
-                <td>DKK</td>
-                <td>117.3150</td>
-              </tr>
-              <tr>
-                <td>EUR</td>
-                <td>87.3274</td>
-              </tr>
-              <tr>
-                <td>GBP</td>
-                <td>101.4554</td>
-              </tr>
-              </table>
-</div>
-</div>
       </div>
-    </main>
-    <footer>
-        <p class="media-text-one">© Евгений Понасенков, 2021</p>
-        <p class="media-text-one">Все права на материалы сайта принадлежат Евгению Понасенкову. Использование, перепубликация 
-            и цитирование материалов сайта возможно 
-            только с письменного разрешения официального представителя Евгения Понасенкова, 
-            при условии согласия с пользовательским соглашением.</p>
+      
+      <div class="currency__table">
+        <div class="table__item">
+          <table class="table__item_exchange_rates" width="100%" cellpadding="6">
+            <tr>
+              <th>Код</th>
+              <th>Курс</th>
+            </tr>
+            <tr>
+              <td>AMD</td>
+              <td>138.0370</td>
+            </tr>
+            <tr>
+              <td>AUD</td>
+              <td>55.6234</td>
+            </tr>
+            <tr>
+              <td>AZN</td>
+              <td>42.1893</td>
+            </tr>
+            <tr>
+              <td>BGN</td>
+              <td>44.6019</td>
+            </tr>
+            <tr>
+              <td>BRL</td>
+              <td>14.1777</td>
+            </tr>
+            <tr>
+              <td>BYN</td>
+              <td>28.8949</td>
+            </tr>
+            <tr>
+              <td>CAD</td>
+              <td>59.2590</td>
+            </tr>
+            <tr>
+              <td>CHF</td>
+              <td>80.0265</td>
+            </tr>
+            <tr>
+              <td>CNY</td>
+              <td>112.1590</td>
+            </tr>
+            <tr>
+              <td>CZK</td>
+              <td>34.4879</td>
+            </tr>
+            <tr>
+              <td>DKK</td>
+              <td>117.3150</td>
+            </tr>
+            <tr>
+              <td>EUR</td>
+              <td>87.3274</td>
+            </tr>
+            <tr>
+              <td>GBP</td>
+              <td>101.4554</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <footer>
+    <p class="footer__item_media_text_author">© Евгений Понасенков, 2021</p>
+    <p class="footer__item_media_text_copyright">Все права на материалы сайта принадлежат Евгению Понасенкову. Использование, перепубликация 
+      и цитирование материалов сайта возможно 
+      только с письменного разрешения официального представителя Евгения Понасенкова, 
+      при условии согласия с пользовательским соглашением.</p>
     </footer>
     <script src="/main.js"></script>
-</body>
-</html>
+  </body>
+  </html>
+
+  
